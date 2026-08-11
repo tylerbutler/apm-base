@@ -10,7 +10,6 @@ targets:
 - copilot
 dependencies:
   apm:
-    - tylerbutler/vestibule/.claude/skills/gleam-review
     - JuliusBrussee/caveman/skills/caveman-commit
     - DietrichGebert/ponytail
 
