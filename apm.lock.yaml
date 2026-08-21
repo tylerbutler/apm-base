@@ -247,6 +247,15 @@ deployments:
   content_hash: sha256:7f6bee86702a488d29ef0dcaabf424bbe2aca345a6a642319d43a1fe0276792e
 - kind: project-relative
   target: claude
+  value: .claude/rules/use-ste.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6bfec65cbeaf6e78cf7885d6119fb868ad789db4a34a7dd28c2e71abfe69f803
+- kind: project-relative
+  target: claude
   value: .claude/skills/caveman-commit
   runtime: null
   scope: project
@@ -758,11 +767,24 @@ deployments:
   - dietrichgebert/ponytail
   active_owner: dietrichgebert/ponytail
   content_hash: sha256:7f6bee86702a488d29ef0dcaabf424bbe2aca345a6a642319d43a1fe0276792e
+- kind: project-relative
+  target: copilot
+  value: .github/instructions/use-ste.instructions.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:c4512aac8ae85c13578effb80b704cc72a14a6a13a3c5f3db036ca2e899513de
 local_deployed_files:
 - .agents/skills/prose-banlist
 - .agents/skills/prose-banlist/SKILL.md
+- .claude/rules/use-ste.md
 - .claude/skills/prose-banlist
 - .claude/skills/prose-banlist/SKILL.md
+- .github/instructions/use-ste.instructions.md
 local_deployed_file_hashes:
   .agents/skills/prose-banlist/SKILL.md: sha256:af6bfe1df1e6399041019eb74b24b301137dcaae65a6736e8c0149c9a996a8db
+  .claude/rules/use-ste.md: sha256:6bfec65cbeaf6e78cf7885d6119fb868ad789db4a34a7dd28c2e71abfe69f803
   .claude/skills/prose-banlist/SKILL.md: sha256:af6bfe1df1e6399041019eb74b24b301137dcaae65a6736e8c0149c9a996a8db
+  .github/instructions/use-ste.instructions.md: sha256:c4512aac8ae85c13578effb80b704cc72a14a6a13a3c5f3db036ca2e899513de
