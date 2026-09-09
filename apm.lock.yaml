@@ -1,6 +1,6 @@
 lockfile_version: '1'
-generated_at: '2026-09-05T20:17:55.704673+00:00'
-apm_version: 0.29.0
+generated_at: '2026-09-09T03:18:52.740520+00:00'
+apm_version: 0.29.1
 dependencies:
 - repo_url: dietrichgebert/ponytail
   materialization_repo_url: DietrichGebert/ponytail
@@ -147,50 +147,14 @@ dependencies:
   content_hash: sha256:b416cf134b0f33ddadeca7977aebdbb2d3db79a166d0fce2e1aabeec98132766
 deployments:
 - kind: project-relative
-  target: agents
-  value: .agents/skills/humanizer
+  target: claude
+  value: .claude/commands/create-pr.md
   runtime: null
   scope: project
   owners:
   - .
   active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/humanizer/LICENSE
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96
-- kind: project-relative
-  target: agents
-  value: .agents/skills/humanizer/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:14fc8a965b6e0a8dc100ba4dffeab55cb94bbac112abbde7e014d5c15a35c202
-- kind: project-relative
-  target: agents
-  value: .agents/skills/prose-banlist
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: agents
-  value: .agents/skills/prose-banlist/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:48330781d0d69dc91cf4ef295fadc04d6d14f5a195d82b293d31677829e6f2b0
+  content_hash: sha256:f60319bef36ed8d7159543f774f196f2ab90df55d3538c1723da6b81295d02ff
 - kind: project-relative
   target: claude
   value: .claude/hooks/ponytail/hooks/package.json
@@ -830,12 +794,67 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:c4512aac8ae85c13578effb80b704cc72a14a6a13a3c5f3db036ca2e899513de
+- kind: project-relative
+  target: copilot
+  value: .github/prompts/create-pr.prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:5fcb1b64247130aec3a0ebd114ae6d127de44f7e824087033c468d8debb593a2
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/humanizer
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/humanizer/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/humanizer/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:14fc8a965b6e0a8dc100ba4dffeab55cb94bbac112abbde7e014d5c15a35c202
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/prose-banlist
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: legacy
+  value: .agents/skills/prose-banlist/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:48330781d0d69dc91cf4ef295fadc04d6d14f5a195d82b293d31677829e6f2b0
 local_deployed_files:
 - .agents/skills/humanizer
 - .agents/skills/humanizer/LICENSE
 - .agents/skills/humanizer/SKILL.md
 - .agents/skills/prose-banlist
 - .agents/skills/prose-banlist/SKILL.md
+- .claude/commands/create-pr.md
 - .claude/rules/use-ste.md
 - .claude/skills/humanizer
 - .claude/skills/humanizer/LICENSE
@@ -843,12 +862,15 @@ local_deployed_files:
 - .claude/skills/prose-banlist
 - .claude/skills/prose-banlist/SKILL.md
 - .github/instructions/use-ste.instructions.md
+- .github/prompts/create-pr.prompt.md
 local_deployed_file_hashes:
   .agents/skills/humanizer/LICENSE: sha256:4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96
   .agents/skills/humanizer/SKILL.md: sha256:14fc8a965b6e0a8dc100ba4dffeab55cb94bbac112abbde7e014d5c15a35c202
   .agents/skills/prose-banlist/SKILL.md: sha256:48330781d0d69dc91cf4ef295fadc04d6d14f5a195d82b293d31677829e6f2b0
+  .claude/commands/create-pr.md: sha256:f60319bef36ed8d7159543f774f196f2ab90df55d3538c1723da6b81295d02ff
   .claude/rules/use-ste.md: sha256:6bfec65cbeaf6e78cf7885d6119fb868ad789db4a34a7dd28c2e71abfe69f803
   .claude/skills/humanizer/LICENSE: sha256:4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96
   .claude/skills/humanizer/SKILL.md: sha256:14fc8a965b6e0a8dc100ba4dffeab55cb94bbac112abbde7e014d5c15a35c202
   .claude/skills/prose-banlist/SKILL.md: sha256:48330781d0d69dc91cf4ef295fadc04d6d14f5a195d82b293d31677829e6f2b0
   .github/instructions/use-ste.instructions.md: sha256:c4512aac8ae85c13578effb80b704cc72a14a6a13a3c5f3db036ca2e899513de
+  .github/prompts/create-pr.prompt.md: sha256:5fcb1b64247130aec3a0ebd114ae6d127de44f7e824087033c468d8debb593a2
