@@ -1,5 +1,5 @@
 name: apm-base
-version: 0.2.2
+version: 0.2.3
 description: APM project for apm-base
 author: Tyler Butler
 # Which agent platforms to deploy to.
@@ -13,6 +13,7 @@ dependencies:
     - JuliusBrussee/caveman/skills/caveman-commit
     - DietrichGebert/ponytail
     - hardikpandya/stop-slop
+    - udecode/dotai/skills/unslop
   mcp: []
 includes: auto
 scripts: {}
