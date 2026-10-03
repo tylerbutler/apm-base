@@ -13,7 +13,8 @@ dependencies:
     - JuliusBrussee/caveman/skills/caveman-commit
     - DietrichGebert/ponytail
     - hardikpandya/stop-slop
-    - udecode/dotai/skills/unslop
+    - cursor/plugins/pstack/skills/unslop
+
   mcp: []
 includes: auto
 scripts: {}
