@@ -1,5 +1,5 @@
 name: apm-base
-version: 0.2.3
+version: 0.2.4
 description: APM project for apm-base
 author: Tyler Butler
 # Which agent platforms to deploy to.
