@@ -7,7 +7,8 @@ allowed-tools:
 - Write
 - Grep
 - Glob
-description: Merge the latest upstream main into the current branch, or resolve and complete an existing merge.
+description: Merge the latest upstream main into the current branch, or resolve and
+  complete an existing merge.
 ---
 
 Merge the latest upstream main branch into the current branch. If a merge is already in progress, resolve its conflicts and complete that merge instead.

@@ -1,11 +1,11 @@
 lockfile_version: '1'
-generated_at: '2026-10-03T19:56:37.150155+00:00'
-apm_version: 0.32.0
+generated_at: '2026-11-02T15:21:50.987697+00:00'
+apm_version: 0.35.0
 dependencies:
 - repo_url: cursor/plugins
   name: unslop
   host: github.com
-  resolved_commit: 23e4138daa01c42d4969f7a5465f82704e64f798
+  resolved_commit: ae5650febf4320793844c12c4adaa937f417f8da
   version: unknown
   virtual_path: pstack/skills/unslop
   is_virtual: true
@@ -16,17 +16,57 @@ dependencies:
   - .claude/skills/unslop
   - .claude/skills/unslop/SKILL.md
   deployed_file_hashes:
-    .agents/skills/unslop/SKILL.md: sha256:195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1
-    .claude/skills/unslop/SKILL.md: sha256:195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1
-  content_hash: sha256:6018ca8c329ba87c6b4298207f58d6b773fe23e44ff52a00a9a4d160c19bedc0
+    .agents/skills/unslop/SKILL.md: sha256:ccab208e315ce05e2fab8eeee2f7879f1289b5c6844840b2d307adf31c79144f
+    .claude/skills/unslop/SKILL.md: sha256:ccab208e315ce05e2fab8eeee2f7879f1289b5c6844840b2d307adf31c79144f
+  content_hash: sha256:eca0ad9fa3a3867c83f3aaf3a058e247a569c8976a68ca423a569b93eb86de5d
 - repo_url: dietrichgebert/ponytail
   materialization_repo_url: DietrichGebert/ponytail
   name: ponytail
   host: github.com
-  resolved_commit: c982cd411abb53323c4baa1baa3c2f020b8d0b08
-  version: 0.0.0
-  package_type: agent_plugin
-  content_hash: sha256:871f5be35744646309bc56722d3a268c9515dbf3581c73839480e95ede39cbc5
+  resolved_commit: 96608e078b2d5ea607c5c3b8b5a54d1c1fba6846
+  version: 96608e0
+  package_type: marketplace_plugin
+  deployed_files:
+  - .agents/skills/ponytail
+  - .agents/skills/ponytail-audit
+  - .agents/skills/ponytail-audit/SKILL.md
+  - .agents/skills/ponytail-debt
+  - .agents/skills/ponytail-debt/SKILL.md
+  - .agents/skills/ponytail-gain
+  - .agents/skills/ponytail-gain/SKILL.md
+  - .agents/skills/ponytail-help
+  - .agents/skills/ponytail-help/SKILL.md
+  - .agents/skills/ponytail-review
+  - .agents/skills/ponytail-review/SKILL.md
+  - .agents/skills/ponytail/SKILL.md
+  - .claude/skills/ponytail
+  - .claude/skills/ponytail-audit
+  - .claude/skills/ponytail-audit/SKILL.md
+  - .claude/skills/ponytail-debt
+  - .claude/skills/ponytail-debt/SKILL.md
+  - .claude/skills/ponytail-gain
+  - .claude/skills/ponytail-gain/SKILL.md
+  - .claude/skills/ponytail-help
+  - .claude/skills/ponytail-help/SKILL.md
+  - .claude/skills/ponytail-review
+  - .claude/skills/ponytail-review/SKILL.md
+  - .claude/skills/ponytail/SKILL.md
+  - .github/hooks/ponytail-copilot-hooks.json
+  deployed_file_hashes:
+    .agents/skills/ponytail-audit/SKILL.md: sha256:2b3223a02c386d1263e1b08343cb8eb3a53e444cdafb1d79e26c8ec2a8fcad28
+    .agents/skills/ponytail-debt/SKILL.md: sha256:b5ec2762f6ba8c4af9ea7173aa6c9f91b88655a25e43f9de0264f6ce8722b25f
+    .agents/skills/ponytail-gain/SKILL.md: sha256:231034a896d6762e4b5c8468287083422c56b499119976ec9f76821f7d083090
+    .agents/skills/ponytail-help/SKILL.md: sha256:86ab0ce0af70cbeeeef499d5c884873b393f87f86401dcc45553662ce2c1eff9
+    .agents/skills/ponytail-review/SKILL.md: sha256:33fe4ebe22a460924e5d4a261e223df22e409cc94ab76182bee9fb91a3ef022e
+    .agents/skills/ponytail/SKILL.md: sha256:9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509
+    .claude/skills/ponytail-audit/SKILL.md: sha256:2b3223a02c386d1263e1b08343cb8eb3a53e444cdafb1d79e26c8ec2a8fcad28
+    .claude/skills/ponytail-debt/SKILL.md: sha256:b5ec2762f6ba8c4af9ea7173aa6c9f91b88655a25e43f9de0264f6ce8722b25f
+    .claude/skills/ponytail-gain/SKILL.md: sha256:231034a896d6762e4b5c8468287083422c56b499119976ec9f76821f7d083090
+    .claude/skills/ponytail-help/SKILL.md: sha256:86ab0ce0af70cbeeeef499d5c884873b393f87f86401dcc45553662ce2c1eff9
+    .claude/skills/ponytail-review/SKILL.md: sha256:33fe4ebe22a460924e5d4a261e223df22e409cc94ab76182bee9fb91a3ef022e
+    .claude/skills/ponytail/SKILL.md: sha256:9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509
+    .github/hooks/ponytail-copilot-hooks.json: sha256:692b5148c3605d2ece2f081834b650c3c43d75cb272a7884dc40e9ce4425ef79
+  content_hash: sha256:b995a71ddd28e617eb0e7968c7ec7a0cc8229b3af20065432ce5ecb1da2d92bc
 - repo_url: hardikpandya/stop-slop
   name: stop-slop
   host: github.com
@@ -70,7 +110,7 @@ dependencies:
   materialization_repo_url: JuliusBrussee/caveman
   name: caveman-commit
   host: github.com
-  resolved_commit: aeb45e2f787c0757a8af383a291a280cb6aeb4c1
+  resolved_commit: 2e068f735253cce28256744804785f01887d9646
   version: unknown
   virtual_path: skills/caveman-commit
   is_virtual: true
@@ -98,6 +138,15 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:f60319bef36ed8d7159543f774f196f2ab90df55d3538c1723da6b81295d02ff
+- kind: project-relative
+  target: claude
+  value: .claude/commands/merge-upstream.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:f8c97a3085cc2b603cd34428aa28d17c55b5411ba526871ae599cede372d3f89
 - kind: project-relative
   target: claude
   value: .claude/rules/use-ste.md
@@ -161,6 +210,114 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:14fc8a965b6e0a8dc100ba4dffeab55cb94bbac112abbde7e014d5c15a35c202
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ponytail
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ponytail-audit
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ponytail-audit/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: sha256:2b3223a02c386d1263e1b08343cb8eb3a53e444cdafb1d79e26c8ec2a8fcad28
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ponytail-debt
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ponytail-debt/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: sha256:b5ec2762f6ba8c4af9ea7173aa6c9f91b88655a25e43f9de0264f6ce8722b25f
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ponytail-gain
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ponytail-gain/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: sha256:231034a896d6762e4b5c8468287083422c56b499119976ec9f76821f7d083090
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ponytail-help
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ponytail-help/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: sha256:86ab0ce0af70cbeeeef499d5c884873b393f87f86401dcc45553662ce2c1eff9
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ponytail-review
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ponytail-review/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: sha256:33fe4ebe22a460924e5d4a261e223df22e409cc94ab76182bee9fb91a3ef022e
+- kind: project-relative
+  target: claude
+  value: .claude/skills/ponytail/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: sha256:9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509
 - kind: project-relative
   target: claude
   value: .claude/skills/prose-banlist
@@ -268,7 +425,7 @@ deployments:
   owners:
   - cursor/plugins/pstack/skills/unslop
   active_owner: cursor/plugins/pstack/skills/unslop
-  content_hash: sha256:195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1
+  content_hash: sha256:ccab208e315ce05e2fab8eeee2f7879f1289b5c6844840b2d307adf31c79144f
 - kind: project-relative
   target: copilot
   value: .agents/skills/caveman-commit
@@ -296,6 +453,159 @@ deployments:
   - juliusbrussee/caveman/skills/caveman-commit
   active_owner: juliusbrussee/caveman/skills/caveman-commit
   content_hash: sha256:c788a282fc75b981b421dfdad5d84ea7f83f946c126daa39cfc7d3f97845e193
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/humanizer
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/humanizer/LICENSE
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/humanizer/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:14fc8a965b6e0a8dc100ba4dffeab55cb94bbac112abbde7e014d5c15a35c202
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ponytail
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ponytail-audit
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ponytail-audit/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: sha256:2b3223a02c386d1263e1b08343cb8eb3a53e444cdafb1d79e26c8ec2a8fcad28
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ponytail-debt
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ponytail-debt/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: sha256:b5ec2762f6ba8c4af9ea7173aa6c9f91b88655a25e43f9de0264f6ce8722b25f
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ponytail-gain
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ponytail-gain/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: sha256:231034a896d6762e4b5c8468287083422c56b499119976ec9f76821f7d083090
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ponytail-help
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ponytail-help/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: sha256:86ab0ce0af70cbeeeef499d5c884873b393f87f86401dcc45553662ce2c1eff9
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ponytail-review
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ponytail-review/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: sha256:33fe4ebe22a460924e5d4a261e223df22e409cc94ab76182bee9fb91a3ef022e
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/ponytail/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: sha256:9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/prose-banlist
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/prose-banlist/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:48330781d0d69dc91cf4ef295fadc04d6d14f5a195d82b293d31677829e6f2b0
 - kind: project-relative
   target: copilot
   value: .agents/skills/stop-slop
@@ -385,7 +695,16 @@ deployments:
   owners:
   - cursor/plugins/pstack/skills/unslop
   active_owner: cursor/plugins/pstack/skills/unslop
-  content_hash: sha256:195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1
+  content_hash: sha256:ccab208e315ce05e2fab8eeee2f7879f1289b5c6844840b2d307adf31c79144f
+- kind: project-relative
+  target: copilot
+  value: .github/hooks/ponytail-copilot-hooks.json
+  runtime: null
+  scope: project
+  owners:
+  - dietrichgebert/ponytail
+  active_owner: dietrichgebert/ponytail
+  content_hash: sha256:692b5148c3605d2ece2f081834b650c3c43d75cb272a7884dc40e9ce4425ef79
 - kind: project-relative
   target: copilot
   value: .github/instructions/use-ste.instructions.md
@@ -413,51 +732,6 @@ deployments:
   - .
   active_owner: .
   content_hash: sha256:bf990755d11f1e73610d9cde3b656aa175c7f63cdd8d069158302c6496a5b77e
-- kind: project-relative
-  target: legacy
-  value: .agents/skills/humanizer
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: legacy
-  value: .agents/skills/humanizer/LICENSE
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96
-- kind: project-relative
-  target: legacy
-  value: .agents/skills/humanizer/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:14fc8a965b6e0a8dc100ba4dffeab55cb94bbac112abbde7e014d5c15a35c202
-- kind: project-relative
-  target: legacy
-  value: .agents/skills/prose-banlist
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: null
-- kind: project-relative
-  target: legacy
-  value: .agents/skills/prose-banlist/SKILL.md
-  runtime: null
-  scope: project
-  owners:
-  - .
-  active_owner: .
-  content_hash: sha256:48330781d0d69dc91cf4ef295fadc04d6d14f5a195d82b293d31677829e6f2b0
 local_deployed_files:
 - .agents/skills/humanizer
 - .agents/skills/humanizer/LICENSE
@@ -465,6 +739,7 @@ local_deployed_files:
 - .agents/skills/prose-banlist
 - .agents/skills/prose-banlist/SKILL.md
 - .claude/commands/create-pr.md
+- .claude/commands/merge-upstream.md
 - .claude/rules/use-ste.md
 - .claude/skills/humanizer
 - .claude/skills/humanizer/LICENSE
@@ -479,6 +754,7 @@ local_deployed_file_hashes:
   .agents/skills/humanizer/SKILL.md: sha256:14fc8a965b6e0a8dc100ba4dffeab55cb94bbac112abbde7e014d5c15a35c202
   .agents/skills/prose-banlist/SKILL.md: sha256:48330781d0d69dc91cf4ef295fadc04d6d14f5a195d82b293d31677829e6f2b0
   .claude/commands/create-pr.md: sha256:f60319bef36ed8d7159543f774f196f2ab90df55d3538c1723da6b81295d02ff
+  .claude/commands/merge-upstream.md: sha256:f8c97a3085cc2b603cd34428aa28d17c55b5411ba526871ae599cede372d3f89
   .claude/rules/use-ste.md: sha256:6bfec65cbeaf6e78cf7885d6119fb868ad789db4a34a7dd28c2e71abfe69f803
   .claude/skills/humanizer/LICENSE: sha256:4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96
   .claude/skills/humanizer/SKILL.md: sha256:14fc8a965b6e0a8dc100ba4dffeab55cb94bbac112abbde7e014d5c15a35c202
