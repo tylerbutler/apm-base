@@ -1,11 +1,11 @@
 lockfile_version: '1'
-generated_at: '2026-11-02T15:21:50.987697+00:00'
+generated_at: '2026-11-14T00:12:51.063000+00:00'
 apm_version: 0.35.0
 dependencies:
 - repo_url: cursor/plugins
   name: unslop
   host: github.com
-  resolved_commit: ae5650febf4320793844c12c4adaa937f417f8da
+  resolved_commit: 3dbd22ff12742fb28c9700b9760baa29ed41dc13
   version: unknown
   virtual_path: pstack/skills/unslop
   is_virtual: true
@@ -110,7 +110,7 @@ dependencies:
   materialization_repo_url: JuliusBrussee/caveman
   name: caveman-commit
   host: github.com
-  resolved_commit: 2e068f735253cce28256744804785f01887d9646
+  resolved_commit: b4ee71d557d96e3cbc14f88fa6e953a1362865f5
   version: unknown
   virtual_path: skills/caveman-commit
   is_virtual: true
@@ -155,7 +155,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:6bfec65cbeaf6e78cf7885d6119fb868ad789db4a34a7dd28c2e71abfe69f803
+  content_hash: sha256:29c78e0076d736e43b8d9b414465de9c236128975b95118dcb2047f4e49018b2
 - kind: project-relative
   target: claude
   value: .claude/skills/caveman-commit
@@ -335,7 +335,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:48330781d0d69dc91cf4ef295fadc04d6d14f5a195d82b293d31677829e6f2b0
+  content_hash: sha256:77d434e3b207f74a0b5e1e9d62e210d484714ff331351de0b272df1fe242886e
 - kind: project-relative
   target: claude
   value: .claude/skills/stop-slop
@@ -408,6 +408,24 @@ deployments:
   - hardikpandya/stop-slop
   active_owner: hardikpandya/stop-slop
   content_hash: sha256:ffbf1316c7fb5aaf552de005609a64a9639b546ecd76bfb0e482864d5bbe6f58
+- kind: project-relative
+  target: claude
+  value: .claude/skills/storytelling
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/storytelling/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:68a7dfe08ba69c59af66b28d2d9f3344eb97dc7f4eb096cae41f98abcc4ea23e
 - kind: project-relative
   target: claude
   value: .claude/skills/unslop
@@ -605,7 +623,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:48330781d0d69dc91cf4ef295fadc04d6d14f5a195d82b293d31677829e6f2b0
+  content_hash: sha256:77d434e3b207f74a0b5e1e9d62e210d484714ff331351de0b272df1fe242886e
 - kind: project-relative
   target: copilot
   value: .agents/skills/stop-slop
@@ -680,6 +698,24 @@ deployments:
   content_hash: sha256:ffbf1316c7fb5aaf552de005609a64a9639b546ecd76bfb0e482864d5bbe6f58
 - kind: project-relative
   target: copilot
+  value: .agents/skills/storytelling
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/storytelling/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:68a7dfe08ba69c59af66b28d2d9f3344eb97dc7f4eb096cae41f98abcc4ea23e
+- kind: project-relative
+  target: copilot
   value: .agents/skills/unslop
   runtime: null
   scope: project
@@ -713,7 +749,7 @@ deployments:
   owners:
   - .
   active_owner: .
-  content_hash: sha256:c4512aac8ae85c13578effb80b704cc72a14a6a13a3c5f3db036ca2e899513de
+  content_hash: sha256:686d7f6f6172dd5c238371076383b2f67c0f4937465e6e53633936d294c9adbc
 - kind: project-relative
   target: copilot
   value: .github/prompts/create-pr.prompt.md
@@ -738,6 +774,8 @@ local_deployed_files:
 - .agents/skills/humanizer/SKILL.md
 - .agents/skills/prose-banlist
 - .agents/skills/prose-banlist/SKILL.md
+- .agents/skills/storytelling
+- .agents/skills/storytelling/SKILL.md
 - .claude/commands/create-pr.md
 - .claude/commands/merge-upstream.md
 - .claude/rules/use-ste.md
@@ -746,19 +784,23 @@ local_deployed_files:
 - .claude/skills/humanizer/SKILL.md
 - .claude/skills/prose-banlist
 - .claude/skills/prose-banlist/SKILL.md
+- .claude/skills/storytelling
+- .claude/skills/storytelling/SKILL.md
 - .github/instructions/use-ste.instructions.md
 - .github/prompts/create-pr.prompt.md
 - .github/prompts/merge-upstream.prompt.md
 local_deployed_file_hashes:
   .agents/skills/humanizer/LICENSE: sha256:4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96
   .agents/skills/humanizer/SKILL.md: sha256:14fc8a965b6e0a8dc100ba4dffeab55cb94bbac112abbde7e014d5c15a35c202
-  .agents/skills/prose-banlist/SKILL.md: sha256:48330781d0d69dc91cf4ef295fadc04d6d14f5a195d82b293d31677829e6f2b0
+  .agents/skills/prose-banlist/SKILL.md: sha256:77d434e3b207f74a0b5e1e9d62e210d484714ff331351de0b272df1fe242886e
+  .agents/skills/storytelling/SKILL.md: sha256:68a7dfe08ba69c59af66b28d2d9f3344eb97dc7f4eb096cae41f98abcc4ea23e
   .claude/commands/create-pr.md: sha256:f60319bef36ed8d7159543f774f196f2ab90df55d3538c1723da6b81295d02ff
   .claude/commands/merge-upstream.md: sha256:f8c97a3085cc2b603cd34428aa28d17c55b5411ba526871ae599cede372d3f89
-  .claude/rules/use-ste.md: sha256:6bfec65cbeaf6e78cf7885d6119fb868ad789db4a34a7dd28c2e71abfe69f803
+  .claude/rules/use-ste.md: sha256:29c78e0076d736e43b8d9b414465de9c236128975b95118dcb2047f4e49018b2
   .claude/skills/humanizer/LICENSE: sha256:4ac4810254ab36d45419141aeb8e69bf50652cfafe5b2dab947d06d44e5cbf96
   .claude/skills/humanizer/SKILL.md: sha256:14fc8a965b6e0a8dc100ba4dffeab55cb94bbac112abbde7e014d5c15a35c202
-  .claude/skills/prose-banlist/SKILL.md: sha256:48330781d0d69dc91cf4ef295fadc04d6d14f5a195d82b293d31677829e6f2b0
-  .github/instructions/use-ste.instructions.md: sha256:c4512aac8ae85c13578effb80b704cc72a14a6a13a3c5f3db036ca2e899513de
+  .claude/skills/prose-banlist/SKILL.md: sha256:77d434e3b207f74a0b5e1e9d62e210d484714ff331351de0b272df1fe242886e
+  .claude/skills/storytelling/SKILL.md: sha256:68a7dfe08ba69c59af66b28d2d9f3344eb97dc7f4eb096cae41f98abcc4ea23e
+  .github/instructions/use-ste.instructions.md: sha256:686d7f6f6172dd5c238371076383b2f67c0f4937465e6e53633936d294c9adbc
   .github/prompts/create-pr.prompt.md: sha256:5fcb1b64247130aec3a0ebd114ae6d127de44f7e824087033c468d8debb593a2
   .github/prompts/merge-upstream.prompt.md: sha256:bf990755d11f1e73610d9cde3b656aa175c7f63cdd8d069158302c6496a5b77e
