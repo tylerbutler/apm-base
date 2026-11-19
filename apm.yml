@@ -6,15 +6,15 @@ author: Tyler Butler
 # Resolution order: --target flag > this field > auto-detect from filesystem.
 # Accepted values: agent-skills, antigravity, claude, codex, copilot, cursor, gemini, grok-build, kiro, opencode, windsurf
 targets:
-- claude
-- copilot
+  - claude
+  - copilot
 dependencies:
   apm:
     - JuliusBrussee/caveman/skills/caveman-commit
     - DietrichGebert/ponytail
     - hardikpandya/stop-slop
     - cursor/plugins/pstack/skills/unslop
-
+    - cloudflare/security-audit-skill
   mcp: []
 includes: auto
 scripts: {}
