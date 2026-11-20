@@ -1,0 +1,59 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened, closed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    if: >-
+      (github.event_name != 'workflow_dispatch' || github.ref == 'refs/heads/main') &&
+      (github.event_name != 'pull_request' ||
+       github.event.action != 'closed' ||
+       github.event.pull_request.merged == true)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # ratchet:actions/checkout@v7
+        with:
+          ref: ${{ github.event.action == 'closed' && github.event.pull_request.merged == true && github.event.pull_request.merge_commit_sha || github.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: tylerbutler/actions/setup-trellis@b4980d28d8c7ad0044fc2d3fdff208cb5aa2a112 # ratchet:tylerbutler/actions/setup-trellis@main
+        with:
+          version: "1.7.0"
+      - name: Validate release configuration
+        run: trellis doctor --format github
+      - name: Preview version changes
+        run: trellis version plan --json
+
+  release:
+    needs: validate
+    if: >-
+      needs.validate.result == 'success' &&
+      (github.event_name == 'push' ||
+       (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main') ||
+       (github.event_name == 'pull_request' &&
+        github.event.action == 'closed' &&
+        github.event.pull_request.merged == true &&
+        github.event.pull_request.head.ref == 'release/pending' &&
+        github.event.pull_request.head.repo.full_name == github.repository))
+    permissions:
+      contents: write
+      pull-requests: read
+      statuses: write
+    uses: tylerbutler/actions/.github/workflows/trellis-release.yml@b4980d28d8c7ad0044fc2d3fdff208cb5aa2a112 # ratchet:tylerbutler/actions/.github/workflows/trellis-release.yml@main
+    with:
+      trellis_version: "1.7.0"
+      release_mode: git_only
+      required_jobs: '["validate"]'
+      qualification_results: ${{ toJSON(needs) }}
+    secrets:
+      app_id: ${{ secrets.RELEASE_APP_ID }}
+      app_private_key: ${{ secrets.RELEASE_APP_PRIVATE_KEY }}

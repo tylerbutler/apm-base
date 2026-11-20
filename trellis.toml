@@ -1,0 +1,19 @@
+[tools.trellis]
+members = ["."]
+
+[tools.trellis.adapter]
+manifest = "apm.yml"
+
+[tools.trellis.publish]
+exact_tag_format = "v{version}"
+package_tags = ["exact"]
+repository_tag_package = "apm-base"
+repository_tag_format = "v{series}"
+repository_tags = ["major", "minor"]
+
+[tools.trellis.publish.lifecycle]
+default = "git_only"
+
+[tools.trellis.release]
+resume = true
+skip_unchanged = true
