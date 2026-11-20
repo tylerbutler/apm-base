@@ -42,25 +42,3 @@ dependency; use an alias only when updates within that series are intended.
 
 If a release fails, correct the cause and rerun its original workflow run
 before preparing another release. Do not move exact tags to repair a release.
-
-## Repository owner setup
-
-The workflow expects `RELEASE_APP_ID` and `RELEASE_APP_PRIVATE_KEY` repository
-secrets. Confirm that the App is installed for this repository and has these
-repository permissions:
-
-- Contents: read and write.
-- Pull requests: read and write.
-- Commit statuses: read and write.
-
-The App creates and updates the release PR, force-updates `release/pending`,
-and records preparation requests. App-created PRs can trigger validation
-without enabling PR creation for `GITHUB_TOKEN` in the Actions settings.
-The workflow uses `GITHUB_TOKEN` to create tags and GitHub Releases and to
-record release completion.
-
-Branch rules must permit the App to create and force-update `release/pending`.
-Tag rules must permit the release token to create exact tags and update major
-and minor aliases. Keep exact tags immutable. Check installation access and
-rule permissions before enabling release execution; secret names alone do
-not confirm that the credentials work.
