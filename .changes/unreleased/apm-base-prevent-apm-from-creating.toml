@@ -1,0 +1,3 @@
+package = "apm-base"
+kind = "Fixed"
+body = "Prevent APM from creating duplicate local copies of Ponytail plugin skills."
