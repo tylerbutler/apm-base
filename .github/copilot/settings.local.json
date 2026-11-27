@@ -1,13 +1,1 @@
-{
-  "extraKnownMarketplaces": {
-    "apm": {
-      "source": {
-        "source": "directory",
-        "path": "apm_modules"
-      }
-    }
-  },
-  "enabledPlugins": {
-    "ponytail@apm": true
-  }
-}
+{}

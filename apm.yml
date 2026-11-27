@@ -11,10 +11,10 @@ targets:
 dependencies:
   apm:
     - JuliusBrussee/caveman/skills/caveman-commit
-    - DietrichGebert/ponytail
     - hardikpandya/stop-slop
     - cursor/plugins/pstack/skills/unslop
     - cloudflare/security-audit-skill
+    - dietrichgebert/ponytail
   mcp: []
 includes: auto
 scripts: {}
