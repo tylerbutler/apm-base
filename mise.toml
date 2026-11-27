@@ -1,0 +1,3 @@
+[tools]
+"github:microsoft/apm" = "0.39.1"
+"github:tylerbutler/trellis" = "1.7.0"

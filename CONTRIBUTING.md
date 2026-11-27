@@ -2,7 +2,9 @@
 
 ## Release changes
 
-Use [Trellis 1.7.0](https://github.com/tylerbutler/trellis/releases/tag/v1.7.0).
+Use `mise install` to install the tools pinned in `mise.toml`, including
+[Trellis 1.7.0](https://github.com/tylerbutler/trellis/releases/tag/v1.7.0)
+and the APM CLI.
 `apm.yml` is the only package-version source. The native adapter in
 `trellis.toml` lets Trellis update its `version` field without changing the
 other manifest content. Do not bump the version by hand.
